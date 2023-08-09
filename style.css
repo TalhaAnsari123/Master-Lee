@@ -1,0 +1,22 @@
+h1 {
+  font-family: "Times New Roman";
+}
+
+span {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10%;
+}
+
+span:hover {
+  background-color: blue;
+  opacity: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.pp {
+  font-family: 'Poppins';
+  font-weight;;
+}
