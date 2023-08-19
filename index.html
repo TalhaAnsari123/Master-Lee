@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale="1.0>
         <link  href="style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title> Home </title>
         </head>
     <body>
@@ -25,18 +26,15 @@
                     </span>
                 </div>
             </div>
-            <form action="">
-                <input type="text" placeholder="Search" name="sbarhome" class="search-bar">
-                <button type="submit" id="srcbtn">
-                     <span class="material-icons-round">
-                        search
-                     </span>
-                </button>
+            <form action="">     
+                <div class="group">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                    <input placeholder="Search" type="search" class="input">
+                  </div>
             </form>
             <div class="sidebar">
-
             <div class="home">
-                <a href="#">
+                <a href="#" class="active">
                     <span class="material-icons-round">
                         home
                     </span>
@@ -81,9 +79,97 @@
             </div>
         </aside>
     <header><h2>Grand Master Lee's Taekwondo</h2></header>
-    </div>
+    
         
         <!--Sidebar ends-->
-        
+    <main>
+        <h2>Analytics</h2>
+        <div class="analytics">
+            <div class="sales">
+                <div class="status">
+                    <div class="info">
+                        <h3>Total Sales Today</h3>
+                        <h1>$45,900</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="54" cy ="54" r="50"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="members">
+                <div class="status">
+                    <div class="info">
+                        <h3>New Sign-ups</h3>
+                        <h1>600</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="54" cy="54" r="50"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="revenue">
+                <div class="status">
+                    <div class="info">
+                        <h3>Revenue</h3>
+                        <h1>+82%</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="54" cy="54" r="50"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <h2>Shortcuts</h2>
+        <div class="shortcuts">
+            <div class="newmember">
+                <div class="sicon">
+                    <span class="material-symbols-rounded">
+                        person_add
+                    </span>
+                </div>
+                <div class="ledto">
+                    <h1>Add New Member</h1>
+                </div>
+            </div>
+            <div class="cashapp">
+                <div class="sicon">
+                    <span class="material-symbols-rounded">
+                        account_balance
+                    </span>
+                </div>
+                <div class="ledto">
+                    <h1>Cash Register</h1>
+                </div>
+            </div>
+            <div class="alerts">
+                <div class="sicon">
+                    <span class="material-symbols-rounded">
+                        notifications_active
+                    </span>
+                </div>
+                <div class="ledto">
+                    <h1>Alerts</h1>
+                </div>
+            </div>
+            <div class="payments">
+                <div class="sicon">
+                    <span class="material-symbols-rounded">
+                        payments
+                    </span>
+                </div>
+                <div class="ledto">
+                    <h1>Collect Payments</h1>
+                </div>
+            </div>
+        </div>  
+    </main>
+</div>
     </body>
 </html> 
