@@ -120,7 +120,7 @@ b{
 
 aside{
   height: 100vh;
-  width: 11vw;
+  width: 13vw;
   /*border: 0.1px dotted green;*/       /*border for sidebar holder*/
 }
 
@@ -157,6 +157,7 @@ aside .sidebar{
   position:relative;
   top:1.1rem;
   transition: all 0.3s ease;
+  
 }
 
 aside .sidebar:hover{
