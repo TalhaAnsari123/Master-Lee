@@ -120,7 +120,7 @@ b{
 
 aside{
   height: 100vh;
-  width: 11vw;
+  width: 13vw;
   /*border: 0.1px dotted green;*/       /*border for sidebar holder*/
 }
 
@@ -216,7 +216,7 @@ aside .sidebar a:hover span{
 
 .search-bar {
   height: 2em;
-  width: 180px;
+  width: 200px;
   font-family: 'Poppins', sans-serif;
   padding-left: 2%;
   margin-top: 1.4rem;
@@ -255,7 +255,7 @@ header h2 {
   line-height: 28px;
   align-items: center;
   position: relative;
-  max-width: 220px;
+  min-width: 100%;
   margin-top: 1.4rem;
  }
  
@@ -291,4 +291,96 @@ header h2 {
   fill: var(--color-dark);
   width: 1rem;
   height: 1rem;
+ }
+
+ main{
+  margin-top: 13rem;
+  min-height: 10vh;
+  width: 100%;
+ }
+ main h1{
+  font-size: 2vw;
+ }
+ main h3{
+  font-size: 2vw;
+  font-weight: 100;
+  color: #000;
+ }
+ main h2{
+  color:#000;
+ }
+ main .form_container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+ }
+
+.form_container .pt_1{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+ }
+
+ .form_container .pt_1 > div{
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .form_container .pt_1 > div:hover{
+  box-shadow: none;
+  background-color: #CD1126;
+ }
+
+ .form_container .pt_1 > div:focus{
+  background-color: #CD1126;
+ }
+ .form_container .pt_1 > div:first-child{
+  margin-top: 1rem;
+ }
+
+ .form_container .prevnex{
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 2%
+ }
+
+ #pre{
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  background-color: white;
+  padding: 0.6vh 1vw;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ }
+ #confirm{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  background-color: #CD1126;
+  padding: 0.6vh 1vw;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ }
+ #pre:hover{
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-dark);
+ }
+ #confirm:hover{
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-dark);
  }

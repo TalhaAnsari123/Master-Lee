@@ -157,7 +157,6 @@ aside .sidebar{
   position:relative;
   top:1.1rem;
   transition: all 0.3s ease;
-  
 }
 
 aside .sidebar:hover{
@@ -217,7 +216,7 @@ aside .sidebar a:hover span{
 
 .search-bar {
   height: 2em;
-  width: 180px;
+  width: 200px;
   font-family: 'Poppins', sans-serif;
   padding-left: 2%;
   margin-top: 1.4rem;
@@ -295,142 +294,106 @@ header h2 {
  }
 
  main{
-  margin-top: 13rem;
- /* border: 1px solid purple;*/ /*border for below the header and next to sidebar*/
-  height:80vh;
-  width: 90vw;
-}
- 
-main .shortcuts {
-  /*border: 1px solid black;*/  
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.6rem
+    margin-top: 13rem;
+    min-height: 10vh;
+    width: 100%;
+   }
+
+   main h1{
+    font-size: 2vw;
+   }
+   main h3{
+    font-size: 2vw;
+    font-weight: 100;
+    color: #000;
+   }
+   main h2{
+    color:#000;
+   }
+
+   main .form_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   .form_container > div{
+    margin-top: 2rem;
+   }
+   .form_container .name{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1%
+   }
+
+   .name > div {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    
+   }
+   .name > div p{
+    margin-top: 1%;
+    width: 8rem;
+   }
+   .emrgcon{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1%;
+   }
+   .emrgcon > div{
+    display: flex;
+    align-items: center;
+    width:50%;
+   }
+   .emrgcon > div p{
+    margin-top: 1%;
+    width: 22rem;
+   }
+main form input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    font-family: 'Poppins';
 }
 
-main .shortcuts > div{
-    background-color: var(--color-white);
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
-    margin-top: 1rem;
-    box-shadow: var(--box-shadow);
+main form p{
+    font-size: 16px;
+    margin-bottom: 1%;
+}
+
+
+#pre{
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    background-color: white;
+    padding: 0.6vh 1vw;
+    border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
+   }
+   #confirm{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    background-color: #CD1126;
+    padding: 0.6vh 1vw;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   }
+   #pre:hover{
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-dark);
+   }
+   #confirm:hover{
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-dark);
+   }
 
-main .shortcuts > div:hover{
-  box-shadow: none;
-}
- 
- main .analytics {
- /* border: 1px solid black;*/
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
- }
-
- main .analytics > div{
-  background-color: var(--color-white);
-  padding: var(--card-padding);
-  border-radius: var(--card-border-radius);
-  margin-top: 1rem;
-  box-shadow: var(--box-shadow);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-main .analytics > div:hover{
-  box-shadow: none;
-}
-
-main .analytics > div .status{
-  display : flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-main .analytics h3{
-  margin-left: 0.8rem;
-  font-size: 1rem;
-}
-
-main .analytics h1{
-  margin-left: 0.8rem;
-  font-size: 2rem;
-}
-main .analytics .progress {
-  position: relative;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-}
-
-main .analytics svg{
-  width: 8rem;
-  height: 8rem;
-}
-
-main .analytics svg circle{
-  fill: none;
-  stroke-width: 10;
-  stroke-linecap: round;
-  transform: translate(5px, 2px);
-}
-
-main .analytics .sales svg circle{
-  stroke: var(--color-success);
-  stroke-dashoffset: -30;
-  stroke-dasharray: 200;
-}
-
-main .analytics .members svg circle{
-  stroke: var(--color-warning);
-  stroke-dashoffset: -30;
-  stroke-dasharray: 145;
-}
-
-main .analytics .revenue svg circle{
-  stroke: var(--color-danger);
-  stroke-dashoffset: -30;
-  stroke-dasharray: 250;
-}
-
-@media screen and (max-width:1200px){
-  .container{
-    width: 100%;
-    grid-template-columns: 1fr;
-    padding: 0 var(--padding-1);
-}
-
-aside{
-    position : fixed;
-    background-color: var(--color-white);
-    width: 15rem;
-    z-index: 3;
-    box-shadow: 1rem 3rem 4rem var(--color-light);
-    height: 100vh;
-    left: -100%;
-    animation: showMenu 0.4s ease forwards;
-}
-
-header{
-  display: none;
-  
-  margin-left :0%;
-}
-
-
-main .analytics{
-  grid-template-columns: 1fr;
-}
-
-main{
-  margin-top: 2%;
-  width: 98%;
-}
-main .shortcuts{
-  grid-template-columns: 1fr;
-  padding-bottom: 3rem;
-}
-}
+   .prevnex{
+    margin-left:87%;
+    display: flex;
+    gap: 15%;
+   }
